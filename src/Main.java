@@ -21,7 +21,7 @@ public class Main {
                 izlaz.write(c);
             }
             System.out.println("Datoteka je uspješno kopirana.");
-        } catch (IOException e) {
+        } catch (FileNotFoundException e) {
             System.out.println("Došlo je do greške pri kopiranju: " + e.getMessage());
         }
         if (copyFile.exists()) {
