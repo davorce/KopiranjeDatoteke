@@ -1,9 +1,10 @@
-import javax.sound.midi.Soundbank;
 import java.io.*;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+
+        //  C:\Users\cepin\Desktop\JavaAlgebra\21_10.03_Osnove_Zadatak\original.pdf
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Unesi putanju originalne datoteke:");
@@ -26,6 +27,7 @@ public class Main {
         if (copyFile.exists()) {
             System.out.println("Želiš li obrisati kopiju? (y/n)");
             String odgovor = scan.nextLine();
+            scan.close();
 
             if (odgovor.equalsIgnoreCase("y")) {
                 copyFile.delete();
